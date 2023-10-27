@@ -24,6 +24,21 @@
 }
 
 .container h1 {
-  margin-top: 50px;
+  margin: 50px;
   color: #333;
+}
+#output{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#output > div > h1{
+  margin: 10px;
+}
+#output > div > ol{
+  margin-left: 40px;
+}
+#output > div{
+  background-color: rgb(243, 234, 168);
+  border: 2px dotted green;
 }
