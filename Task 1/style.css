@@ -51,6 +51,9 @@ form {
   background-color: #000;
   color: #fff;
 }
+#output > h1{
+  text-align: center;
+}
 
 /* Tablet */
 @media screen and (min-width: 768px) {

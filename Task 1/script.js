@@ -8,3 +8,28 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+document
+.querySelector('main > div > form')
+.addEventListener('submit', e => {
+  e.preventDefault();
+  const kg = e.target.elements.search.value;
+  const lb = kg * 2.2046;
+  const gram = kg / 0.0010000;
+  const oz = kg * 35.274;
+  if(kg == 0 || isNaN(kg)){
+    const wrong = document.createElement('h1');
+    const wrongText = document.createTextNode('You have entered an incorrect number');
+    wrong.appendChild(wrongText);
+    document.querySelector('#output').appendChild(wrong);
+  }else{
+    const field = document.createElement('h1');
+    const fieldText = document.createTextNode(`${kg} kg is equal to:`);
+    field.appendChild(fieldText);
+    const answerField = document.createElement('h1');
+    const answerFieldText = document.createTextNode(`Pounds (lb) = ${lb}, Grams (g) = ${gram}, Ounces (oz) = ${oz}`);
+    answerField.appendChild(answerFieldText);
+    document.querySelector('#output').append(field, answerField);
+  }
+  document.querySelector('form').reset();
+});
