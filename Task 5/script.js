@@ -26,7 +26,6 @@ function filterDogOwners(array){
   });
   return filteredUsers;
 };
-console.log(filterDogOwners(users));
 
 function filterAdults(array){
   const filteredUsers = array.filter(user => {
@@ -34,4 +33,3 @@ function filterAdults(array){
   });
   return filteredUsers;
 };
-console.log(filterAdults(users));

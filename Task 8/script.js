@@ -23,15 +23,3 @@ class Calculator{
     return this.a / this.b;
   }
 }
-
-const numbers = [
-  new Calculator(10, 5),
-  new Calculator(5, 4),
-  new Calculator(125, 257),
-  new Calculator(22, 14)
-];
-
-console.log(numbers[0].sum());
-console.log(numbers[1].subtraction());
-console.log(numbers[2].multiplication());
-console.log(numbers[3].division());
