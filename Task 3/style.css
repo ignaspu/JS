@@ -59,3 +59,23 @@
   border-radius: 5px;
   background-color: #fff;
 }
+#output{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#output > div{
+  border: 1px solid black;
+  width: 30%;
+  background-color:aqua;
+}
+#output > div > img{
+  width: 100%;
+  height: auto;
+}
+#output > div > h1{
+  text-align: center;
+  color: blue;
+  overflow: hidden;
+}
