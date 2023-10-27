@@ -12,7 +12,6 @@ class Movie{
     this.title = title;
     this.director = director;
     this.budget = budget;
-    return this.wasExpensive();
   }
   wasExpensive(){
     return this.budget > 100000000 ? true : false;
